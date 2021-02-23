@@ -1,10 +1,27 @@
-#include<string>
+#include <iostream>
+#include <string>
 #include <vector>
+#include <fstream>
 #include "parseLib.h"
 
 using namespace std;
 
-void split(std::string s, std::vector<std::string>& country, std::vector<std::vector<int>>& voices)
+void parse(string name, vector<string>& country, vector<vector<int>>& voices)
+{
+	string s;
+	int n;
+	ifstream fin(name);
+	getline(fin, s);
+	n = stoi(s);
+	for (int i = 0; i < n; i++)
+	{
+		getline(fin, s);
+		split(s, country, voices);
+	}
+	fin.close();
+}
+
+void split(string s, vector<string>& country, vector<vector<int>>& voices)
 {
 	int next, pos, i;
 	pos = 0;
