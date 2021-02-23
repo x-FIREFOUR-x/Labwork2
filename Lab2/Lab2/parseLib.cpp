@@ -37,3 +37,13 @@ void split(string s, vector<string>& country, vector<vector<int>>& voices)
 		pos = next + 1;
 	}
 }
+
+void output(string name, vector<string>& country, vector<int>& points)
+{
+	ofstream fout(name);
+	for (int i = 0; i < country.size(); i++)
+	{
+		fout << country[i] << " " << points[i] << "\n";
+	}
+	fout.close();
+}
