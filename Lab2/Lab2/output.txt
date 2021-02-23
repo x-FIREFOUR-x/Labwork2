@@ -1,0 +1,10 @@
+Albania 10
+Austria 10
+Belgium 4496452
+Bosnia and Herzegovina 3107532
+Cyprus 3511827
+Czech Republic 6770759
+Estonia 3750741
+Finland 4036561
+Germany 3193167
+Greece 4536474

@@ -2,11 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-<<<<<<< HEAD
       <FullPath>D:\project c++\Lab_works\Labwork2\Lab2\Debug\Lab2.exe</FullPath>
-=======
-      <FullPath>D:\1 курс\ОП\Eurovision\Labwork2\Lab2\Debug\Lab2.exe</FullPath>
->>>>>>> parsing
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />
