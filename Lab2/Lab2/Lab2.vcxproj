@@ -141,6 +141,10 @@
   <ItemGroup>
     <ClCompile Include="logic.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="parseLib.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="parseLib.h" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="logic.h" />

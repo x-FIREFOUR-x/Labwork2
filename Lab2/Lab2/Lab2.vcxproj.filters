@@ -18,12 +18,20 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+<<<<<<< HEAD
     <ClCompile Include="logic.cpp">
+=======
+    <ClCompile Include="parseLib.cpp">
+>>>>>>> parsing
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <ClInclude Include="logic.h">
+=======
+    <ClInclude Include="parseLib.h">
+>>>>>>> parsing
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

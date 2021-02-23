@@ -1,2 +1,12 @@
 ﻿  main.cpp
+<<<<<<< HEAD
   Lab2.vcxproj -> D:\project c++\Lab_works\Labwork2\Lab2\Debug\Lab2.exe
+=======
+D:\1 курс\ОП\Eurovision\Labwork2\Lab2\Lab2\main.cpp(14,20): warning C4018: '<': signed/unsigned mismatch
+D:\1 курс\ОП\Eurovision\Labwork2\Lab2\Lab2\main.cpp(17,21): warning C4018: '<': signed/unsigned mismatch
+  parseLib.cpp
+D:\1 курс\ОП\Eurovision\Labwork2\Lab2\Lab2\parseLib.cpp(26,17): warning C4101: 'i': unreferenced local variable
+D:\1 курс\ОП\Eurovision\Labwork2\Lab2\Lab2\parseLib.cpp(44,20): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+  Lab2.vcxproj -> D:\1 курс\ОП\Eurovision\Labwork2\Lab2\Debug\Lab2.exe
+>>>>>>> parsing
