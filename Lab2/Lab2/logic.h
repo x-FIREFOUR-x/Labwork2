@@ -1,2 +1,2 @@
 using namespace std;
-string** counting_goals (string* name_countries, int** voices, int number_countries);
+vector<int> counting_goals(vector <vector<int>> voices);
