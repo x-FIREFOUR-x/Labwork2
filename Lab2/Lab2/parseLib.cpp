@@ -1,22 +1,22 @@
 #include<string>
+#include <vector>
 #include "parseLib.h"
 
 using namespace std;
 
-void split(string s, string* country, int** voices, int ind)
+void split(std::string s, std::vector<std::string>& country, std::vector<std::vector<int>>& voices)
 {
 	int next, pos, i;
 	pos = 0;
 	next = 0;
 	next = s.find(',', pos);
-	country[ind] = s.substr(pos, next - pos);
+	country.push_back(s.substr(pos, next - pos));
 	pos = next + 1;
-	i = 0;
+	voices.push_back(vector<int>());
 	while (next != s.npos)
 	{
 		next = s.find(',', pos);
-		voices[ind][i] = stoi(s.substr(pos, next - pos));
+		voices[voices.size() - 1].push_back(stoi(s.substr(pos, next - pos)));
 		pos = next + 1;
-		i++;
 	}
 }
