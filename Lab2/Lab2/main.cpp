@@ -14,7 +14,7 @@ int main()
 	vector<vector<int>> voices;
 	parse("input.txt", country, voices);
 	int** balls = counting_goals(voices);
-	//vector<int> list_balls = sum_balls(balls, voices.size());
+	vector<int> list_balls = sum_balls(balls, voices.size());
 	/*country = sort_country(list_voices, country);
 	output("output.txt", country, list_voices);*/
 

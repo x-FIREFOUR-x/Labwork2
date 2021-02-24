@@ -30,6 +30,14 @@ int** counting_goals(vector <vector<int>> voices)
 		scoring(balls, country, column, column_goals);
 	}
 
+	for (int i = 0; i < size; i++)
+	{
+		for (int j = 0; j < size; j++)
+		{
+			cout << setw(2) << balls[i][j] << " ";
+		}
+		cout << endl;
+	}
 	return balls;
 }
 
@@ -84,6 +92,11 @@ vector<int> sum_balls(int** balls, int amont_country)
 		list_balls.push_back(sum);
 	}
 
+	cout << endl;
+	for (int i = 0; i < amont_country; i++)
+	{
+		cout << list_balls[i] << endl;
+	}
 	return list_balls;
 }
 
