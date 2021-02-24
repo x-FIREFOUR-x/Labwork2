@@ -2,7 +2,10 @@
 #include <string>
 #include <vector>
 #include <fstream>
+#include<direct.h>
+#include<io.h>
 #include "parseLib.h"
+
 
 using namespace std;
 
@@ -10,15 +13,23 @@ void parse(string name, vector<string>& country, vector<vector<int>>& voices)
 {
 	string s;
 	int n;
-	ifstream fin(name);
-	getline(fin, s);
-	n = stoi(s);
-	for (int i = 0; i < n; i++)
+	string nameCopy = name + "\\*.csv";
+	const char* path = (nameCopy).c_str();
+	_finddata_t data;
+	intptr_t handle = _findfirst(path, &data);
+	do
 	{
+
+		ifstream fin(name + "\\" + data.name);
 		getline(fin, s);
-		split(s, country, voices);
-	}
-	fin.close();
+		n = stoi(s);
+		for (int i = 0; i < n; i++)
+		{
+			getline(fin, s);
+			split(s, country, voices);
+		}
+		fin.close();
+	} while (_findnext(handle, &data) == 0);
 }
 
 void split(string s, vector<string>& country, vector<vector<int>>& voices)
@@ -40,10 +51,11 @@ void split(string s, vector<string>& country, vector<vector<int>>& voices)
 
 void output(string name, vector<string>& country, vector<int>& points)
 {
+	name = name + "\\result.csv";
 	ofstream fout(name);
 	for (int i = 0; i < 10; i++)
 	{
-		fout << country[i] << " " << points[i] << "\n";
+		fout << country[i] << "," << points[i] << "\n";
 	}
 	fout.close();
 }

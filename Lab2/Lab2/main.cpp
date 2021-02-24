@@ -12,11 +12,13 @@ int main()
 {
 	vector<string> country;
 	vector<vector<int>> voices;
-	parse("input.txt", country, voices);
+	string name;
+	cin >> name;
+	parse(name, country, voices);
 	int** balls = counting_goals(voices);
 	vector<int> list_balls = sum_balls(balls, voices.size());
 	country = sort_country(list_balls, country);
-	output("results.csv", country, list_balls);
+	output(name, country, list_balls);
 
 	return 0;
 }
