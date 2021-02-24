@@ -13,9 +13,9 @@ int main()
 	vector<string> country;
 	vector<vector<int>> voices;
 	parse("input.txt", country, voices);
-	vector<int> list_voices = counting_goals(voices);
-	country = sort_country(list_voices, country);
-	output("output.txt", country, list_voices);
+	int** list_voices = counting_goals(voices);
+	/*country = sort_country(list_voices, country);
+	output("output.txt", country, list_voices);*/
 
 	return 0;
 }

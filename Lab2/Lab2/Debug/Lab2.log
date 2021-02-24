@@ -1,8 +1,9 @@
 ﻿  logic.cpp
-D:\project c++\Lab_works\Labwork2\Lab2\Lab2\logic.cpp(12,20): warning C4018: <: несоответствие типов со знаком и без знака
-D:\project c++\Lab_works\Labwork2\Lab2\Lab2\logic.cpp(15,21): warning C4018: <: несоответствие типов со знаком и без знака
-D:\project c++\Lab_works\Labwork2\Lab2\Lab2\logic.cpp(28,20): warning C4018: <: несоответствие типов со знаком и без знака
-D:\project c++\Lab_works\Labwork2\Lab2\Lab2\logic.cpp(30,25): warning C4018: <: несоответствие типов со знаком и без знака
-  main.cpp
-  Создание кода...
+D:\project c++\Lab_works\Labwork2\Lab2\Lab2\logic.cpp(11,20): warning C4018: <: несоответствие типов со знаком и без знака
+D:\project c++\Lab_works\Labwork2\Lab2\Lab2\logic.cpp(15,20): warning C4018: <: несоответствие типов со знаком и без знака
+D:\project c++\Lab_works\Labwork2\Lab2\Lab2\logic.cpp(20,30): warning C4018: <: несоответствие типов со знаком и без знака
+D:\project c++\Lab_works\Labwork2\Lab2\Lab2\logic.cpp(23,21): warning C4018: <: несоответствие типов со знаком и без знака
+D:\project c++\Lab_works\Labwork2\Lab2\Lab2\logic.cpp(35,20): warning C4018: <: несоответствие типов со знаком и без знака
+D:\project c++\Lab_works\Labwork2\Lab2\Lab2\logic.cpp(37,25): warning C4018: <: несоответствие типов со знаком и без знака
+D:\project c++\Lab_works\Labwork2\Lab2\Lab2\logic.cpp(53,20): warning C4018: <: несоответствие типов со знаком и без знака
   Lab2.vcxproj -> D:\project c++\Lab_works\Labwork2\Lab2\Debug\Lab2.exe
