@@ -2,39 +2,43 @@
 #include <string>
 #include <cstdlib>
 #include <vector>
+#include <iomanip>
 #include "logic.h"
 
 using namespace std;
 int** counting_goals(vector <vector<int>> voices)
 {
-	int** list_voiñes = new int* [voices.size()];
-	for (int i = 0; i < voices.size(); i++)
-		list_voiñes[i] = new int[voices.size()];
+	int size = voices.size();
+	
+	int** balls = new int* [size];
+	for (int i = 0; i < size; i++)
+		balls[i] = new int [size];
 
 	vector <int> country;
-	for (int i = 0; i < voices.size(); i++)
+	for (int i = 0; i < size; i++)
 	{
 		country.push_back(i);
 	}
-
-	for (int column = 0; column < voices.size(); column++)
+	
+	for (int column = 0; column < size; column++)
 	{
 		vector <int> column_goals;
-		for (int i = 0; i < country.size(); i++)
+		for (int i = 0; i < size; i++)
 		{
-			column_goals[i] = voices[i][column];
+			column_goals.push_back(voices[i][column]);
 		}
-		scoring(list_voiñes, country, column, column_goals);
+		scoring(balls, country, column, column_goals);
 	}
 
-	return list_voiñes;
+	return balls;
 }
 
-void scoring (int** list_voiñes, vector <int> country, int column, vector <int> column_goals)
+void scoring (int** balls, vector <int> country, int column, vector <int> column_goals)
 {
-	for (int i = 0; i < country.size(); i++)
+	int size = column_goals.size();
+	for (int i = 0; i < size; i++)
 	{
-		for (int j = i + 1; j < country.size(); j++)
+		for (int j = i + 1; j < size; j++)
 		{
 			if (column_goals[i] < column_goals[j])
 			{
@@ -50,21 +54,37 @@ void scoring (int** list_voiñes, vector <int> country, int column, vector <int> 
 		}
 	}
 
-	for (int i = 0; i < country.size(); i++)
+	for (int i = 0; i < size; i++)
 	{
 		if ( i ==  0) 
-			list_voiñes[country[i]][column] = 12;
+			balls[country[i]][column] = 12;
 		else 
 			if (i == 1)
-				 list_voiñes[country[i]][column] = 10;
+				balls[country[i]][column] = 10;
 			else
 				if (i > 1 && i < 10)
-					list_voiñes[country[i]][column] = 10 - i;
+					balls[country[i]][column] = 10 - i;
 				else
-					list_voiñes[country[i]][column] = 0;
+					balls[country[i]][column] = 0;
 		
 	}
 
+}
+
+vector<int> sum_balls(int** balls, int amont_country)
+{
+	vector <int> list_balls;
+	for (int i = 0; i < amont_country; i++)
+	{
+		int sum = 0;
+		for (int j = 0; j < amont_country; j++)
+		{
+			sum += balls[i][j];
+		}
+		list_balls.push_back(sum);
+	}
+
+	return list_balls;
 }
 
 /*vector<string> sort_country(vector<int>& list_voices, vector<string> country)
