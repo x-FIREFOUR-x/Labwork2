@@ -87,17 +87,17 @@ vector<int> sum_balls(int** balls, int amont_country)
 	return list_balls;
 }
 
-/*vector<string> sort_country(vector<int>& list_voices, vector<string> country)
+vector<string> sort_country(vector<int>& list_balls, vector<string> country)
 {
-	for (int i = 0; i < list_voices.size(); i++)
+	for (int i = 0; i < list_balls.size(); i++)
 	{
-		for (int j = i + 1; j < list_voices.size(); j++)
+		for (int j = i + 1; j < list_balls.size(); j++)
 		{
-			if (list_voices[i] < list_voices[j])
+			if (list_balls[i] < list_balls[j])
 			{
-				int buf_voices = list_voices[i];
-				list_voices[i] = list_voices[j];
-				list_voices[j] = buf_voices;
+				int buf_voices = list_balls[i];
+				list_balls[i] = list_balls[j];
+				list_balls[j] = buf_voices;
 
 				string buf_country = country[i];
 				country[i] = country[j];
@@ -108,4 +108,4 @@ vector<int> sum_balls(int** balls, int amont_country)
 	}
 
 	return country;
-}*/
+}

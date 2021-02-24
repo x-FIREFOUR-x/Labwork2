@@ -1,2 +1,4 @@
 ﻿  logic.cpp
+D:\project c++\Lab_works\Labwork2\Lab2\Lab2\logic.cpp(92,20): warning C4018: <: несоответствие типов со знаком и без знака
+D:\project c++\Lab_works\Labwork2\Lab2\Lab2\logic.cpp(94,25): warning C4018: <: несоответствие типов со знаком и без знака
   Lab2.vcxproj -> D:\project c++\Lab_works\Labwork2\Lab2\Debug\Lab2.exe

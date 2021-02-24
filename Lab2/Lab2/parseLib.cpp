@@ -41,7 +41,7 @@ void split(string s, vector<string>& country, vector<vector<int>>& voices)
 void output(string name, vector<string>& country, vector<int>& points)
 {
 	ofstream fout(name);
-	for (int i = 0; i < country.size(); i++)
+	for (int i = 0; i < 10; i++)
 	{
 		fout << country[i] << " " << points[i] << "\n";
 	}
