@@ -19,16 +19,19 @@ void parse(string name, vector<string>& country, vector<vector<int>>& voices)
 	intptr_t handle = _findfirst(path, &data);
 	do
 	{
-
-		ifstream fin(name + "\\" + data.name);
-		getline(fin, s);
-		n = stoi(s);
-		for (int i = 0; i < n; i++)
+		string dateName = data.name;
+		if (dateName != "result.csv")
 		{
+			ifstream fin(name + "\\" + data.name);
 			getline(fin, s);
-			split(s, country, voices);
+			n = stoi(s);
+			for (int i = 0; i < n; i++)
+			{
+				getline(fin, s);
+				split(s, country, voices);
+			}
+			fin.close();
 		}
-		fin.close();
 	} while (_findnext(handle, &data) == 0);
 }
 
