@@ -8,22 +8,22 @@
 using namespace std;
 int** counting_goals(vector <vector<int>> voices)
 {
-	int size = voices.size();
+	//int size = voices.size();
 	
-	int** balls = new int* [size];
-	for (int i = 0; i < size; i++)
-		balls[i] = new int [size];
+	int** balls = new int* [voices.size()];
+	for (int i = 0; i < voices.size(); i++)
+		balls[i] = new int [voices.size()];
 
 	vector <int> country;
-	for (int i = 0; i < size; i++)
+	for (int i = 0; i < voices.size(); i++)
 	{
 		country.push_back(i);
 	}
 	
-	for (int column = 0; column < size; column++)
+	for (int column = 0; column < voices.size(); column++)
 	{
 		vector <int> column_goals;
-		for (int i = 0; i < size; i++)
+		for (int i = 0; i < voices.size(); i++)
 		{
 			column_goals.push_back(voices[i][column]);
 		}
@@ -35,10 +35,10 @@ int** counting_goals(vector <vector<int>> voices)
 
 void scoring (int** balls, vector <int> country, int column, vector <int> column_goals)
 {
-	int size = column_goals.size();
-	for (int i = 0; i < size; i++)
+	//int size = column_goals.size();
+	for (int i = 0; i < column_goals.size(); i++)
 	{
-		for (int j = i + 1; j < size; j++)
+		for (int j = i + 1; j < column_goals.size(); j++)
 		{
 			if (column_goals[i] < column_goals[j])
 			{
@@ -54,7 +54,7 @@ void scoring (int** balls, vector <int> country, int column, vector <int> column
 		}
 	}
 
-	for (int i = 0; i < size; i++)
+	for (int i = 0; i < column_goals.size(); i++)
 	{
 		if ( i ==  0) 
 			balls[country[i]][column] = 12;

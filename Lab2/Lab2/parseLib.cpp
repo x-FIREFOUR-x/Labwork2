@@ -55,7 +55,7 @@ void output(string name, vector<string>& country, vector<int>& points)
 	ofstream fout(name);
 	for (int i = 0; i < 10; i++)
 	{
-		fout << country[i] << "," << points[i] << "\n";
+		fout << country[i] << ";" << points[i] << "\n";
 	}
 	fout.close();
 }
