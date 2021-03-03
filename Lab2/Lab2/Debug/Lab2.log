@@ -1,23 +1,14 @@
-<<<<<<< HEAD
 ﻿  logic.cpp
-D:\project c++\Lab_works\Labwork2\Lab2\Lab2\logic.cpp(14,20): warning C4018: <: несоответствие типов со знаком и без знака
-D:\project c++\Lab_works\Labwork2\Lab2\Lab2\logic.cpp(18,20): warning C4018: <: несоответствие типов со знаком и без знака
-D:\project c++\Lab_works\Labwork2\Lab2\Lab2\logic.cpp(23,30): warning C4018: <: несоответствие типов со знаком и без знака
-D:\project c++\Lab_works\Labwork2\Lab2\Lab2\logic.cpp(26,21): warning C4018: <: несоответствие типов со знаком и без знака
-D:\project c++\Lab_works\Labwork2\Lab2\Lab2\logic.cpp(39,20): warning C4018: <: несоответствие типов со знаком и без знака
-D:\project c++\Lab_works\Labwork2\Lab2\Lab2\logic.cpp(41,25): warning C4018: <: несоответствие типов со знаком и без знака
-D:\project c++\Lab_works\Labwork2\Lab2\Lab2\logic.cpp(57,20): warning C4018: <: несоответствие типов со знаком и без знака
-D:\project c++\Lab_works\Labwork2\Lab2\Lab2\logic.cpp(92,20): warning C4018: <: несоответствие типов со знаком и без знака
-D:\project c++\Lab_works\Labwork2\Lab2\Lab2\logic.cpp(94,25): warning C4018: <: несоответствие типов со знаком и без знака
+D:\1 курс\ОП\Eurovision\Labwork2\Lab2\Lab2\logic.cpp(14,20): warning C4018: '<': signed/unsigned mismatch
+D:\1 курс\ОП\Eurovision\Labwork2\Lab2\Lab2\logic.cpp(18,20): warning C4018: '<': signed/unsigned mismatch
+D:\1 курс\ОП\Eurovision\Labwork2\Lab2\Lab2\logic.cpp(23,30): warning C4018: '<': signed/unsigned mismatch
+D:\1 курс\ОП\Eurovision\Labwork2\Lab2\Lab2\logic.cpp(26,21): warning C4018: '<': signed/unsigned mismatch
+D:\1 курс\ОП\Eurovision\Labwork2\Lab2\Lab2\logic.cpp(39,20): warning C4018: '<': signed/unsigned mismatch
+D:\1 курс\ОП\Eurovision\Labwork2\Lab2\Lab2\logic.cpp(41,25): warning C4018: '<': signed/unsigned mismatch
+D:\1 курс\ОП\Eurovision\Labwork2\Lab2\Lab2\logic.cpp(57,20): warning C4018: '<': signed/unsigned mismatch
+D:\1 курс\ОП\Eurovision\Labwork2\Lab2\Lab2\logic.cpp(59,9): warning C4018: '<': signed/unsigned mismatch
+D:\1 курс\ОП\Eurovision\Labwork2\Lab2\Lab2\logic.cpp(85,20): warning C4018: '<': signed/unsigned mismatch
+D:\1 курс\ОП\Eurovision\Labwork2\Lab2\Lab2\logic.cpp(87,25): warning C4018: '<': signed/unsigned mismatch
   main.cpp
-  parseLib.cpp
-D:\project c++\Lab_works\Labwork2\Lab2\Lab2\parseLib.cpp(40,17): warning C4101: i: неиспользованная локальная переменная
-  Создание кода...
-  Lab2.vcxproj -> D:\project c++\Lab_works\Labwork2\Lab2\Debug\Lab2.exe
-=======
-﻿  main.cpp
-  parseLib.cpp
-D:\1 курс\ОП\Eurovision\Labwork2\Lab2\Lab2\parseLib.cpp(40,17): warning C4101: 'i': unreferenced local variable
   Generating Code...
   Lab2.vcxproj -> D:\1 курс\ОП\Eurovision\Labwork2\Lab2\Debug\Lab2.exe
->>>>>>> Vlads_changes

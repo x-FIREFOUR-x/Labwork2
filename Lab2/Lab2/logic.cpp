@@ -102,3 +102,13 @@ vector<string> sort_country(vector<int>& list_balls, vector<string> country)
 
 	return country;
 }
+
+void readWinnerPoints(int n, vector<int>&points)
+{
+	for (int i = 0; i < n; i++)
+	{
+		int num;
+		cin >> num;
+		points.push_back(num);
+	}
+}

@@ -16,12 +16,7 @@ int main()
 	string name;
 	int n;
 	cin >> n;
-	for (int i = 0; i < n; i++)
-	{
-		int num;
-		cin >> num;
-		points.push_back(num);
-	}
+	readWinnerPoints(n, points);
 	cout << "Input path: ";
 	cin >> name;
 	parse(name, country, voices);
