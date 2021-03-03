@@ -47,7 +47,15 @@ void split(string s, vector<string>& country, vector<vector<int>>& voices)
 	while (next != s.npos)
 	{
 		next = s.find(',', pos);
-		voices[voices.size() - 1].push_back(stoi(s.substr(pos, next - pos)));
+		if (s[pos] == '0' && (s[pos + 1] == 'x' || s[pos + 1] == 'X'))
+		{
+			int hex = stoi(s.substr(pos + 2, next - pos),nullptr, 16);
+			voices[voices.size() - 1].push_back(hex);
+		}
+		else
+		{ 
+			voices[voices.size() - 1].push_back(stoi(s.substr(pos, next - pos)));
+		}
 		pos = next + 1;
 	}
 }
@@ -62,3 +70,4 @@ void output(string name, vector<string>& country, vector<int>& points)
 	}
 	fout.close();
 }
+
