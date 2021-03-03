@@ -6,7 +6,7 @@
 #include "logic.h"
 
 using namespace std;
-int** counting_goals(vector <vector<int>> voices)
+int** counting_goals(vector <vector<int>> voices, vector<int> points)
 {
 	//int size = voices.size();
 	
@@ -27,13 +27,13 @@ int** counting_goals(vector <vector<int>> voices)
 		{
 			column_goals.push_back(voices[i][column]);
 		}
-		scoring(balls, country, column, column_goals);
+		scoring(balls, country, column, column_goals, points);
 	}
 
 	return balls;
 }
 
-void scoring (int** balls, vector <int> country, int column, vector <int> column_goals)
+void scoring (int** balls, vector <int> country, int column, vector <int> column_goals, vector<int> points)
 {
 	//int size = column_goals.size();
 	for (int i = 0; i < column_goals.size(); i++)
@@ -56,17 +56,10 @@ void scoring (int** balls, vector <int> country, int column, vector <int> column
 
 	for (int i = 0; i < column_goals.size(); i++)
 	{
-		if ( i ==  0) 
-			balls[country[i]][column] = 12;
-		else 
-			if (i == 1)
-				balls[country[i]][column] = 10;
-			else
-				if (i > 1 && i < 10)
-					balls[country[i]][column] = 10 - i;
-				else
-					balls[country[i]][column] = 0;
-		
+		if (i < points.size())
+			balls[country[i]][column] = points[i];
+		else
+			balls[country[i]][column] = 0;
 	}
 
 }

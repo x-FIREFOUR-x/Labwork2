@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿  logic.cpp
 D:\project c++\Lab_works\Labwork2\Lab2\Lab2\logic.cpp(14,20): warning C4018: <: несоответствие типов со знаком и без знака
 D:\project c++\Lab_works\Labwork2\Lab2\Lab2\logic.cpp(18,20): warning C4018: <: несоответствие типов со знаком и без знака
@@ -13,3 +14,10 @@ D:\project c++\Lab_works\Labwork2\Lab2\Lab2\logic.cpp(94,25): warning C4018: <: 
 D:\project c++\Lab_works\Labwork2\Lab2\Lab2\parseLib.cpp(40,17): warning C4101: i: неиспользованная локальная переменная
   Создание кода...
   Lab2.vcxproj -> D:\project c++\Lab_works\Labwork2\Lab2\Debug\Lab2.exe
+=======
+﻿  main.cpp
+  parseLib.cpp
+D:\1 курс\ОП\Eurovision\Labwork2\Lab2\Lab2\parseLib.cpp(40,17): warning C4101: 'i': unreferenced local variable
+  Generating Code...
+  Lab2.vcxproj -> D:\1 курс\ОП\Eurovision\Labwork2\Lab2\Debug\Lab2.exe
+>>>>>>> Vlads_changes

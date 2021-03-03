@@ -12,11 +12,20 @@ int main()
 {
 	vector<string> country;
 	vector<vector<int>> voices;
+	vector<int> points;
 	string name;
+	int n;
+	cin >> n;
+	for (int i = 0; i < n; i++)
+	{
+		int num;
+		cin >> num;
+		points.push_back(num);
+	}
 	cout << "Input path: ";
 	cin >> name;
 	parse(name, country, voices);
-	int** balls = counting_goals(voices);
+	int** balls = counting_goals(voices, points);
 	vector<int> list_balls = sum_balls(balls, voices.size());
 	vector<string> top_country;
 	top_country = sort_country(list_balls, country);
