@@ -1,3 +1,5 @@
-﻿  parseLib.cpp
-D:\project c++\Lab_works\Labwork2\Lab2\Lab2\parseLib.cpp(40,17): warning C4101: i: неиспользованная локальная переменная
-  Lab2.vcxproj -> D:\project c++\Lab_works\Labwork2\Lab2\Debug\Lab2.exe
+﻿  main.cpp
+  parseLib.cpp
+D:\1 курс\ОП\Eurovision\Labwork2\Lab2\Lab2\parseLib.cpp(40,17): warning C4101: 'i': unreferenced local variable
+  Generating Code...
+  Lab2.vcxproj -> D:\1 курс\ОП\Eurovision\Labwork2\Lab2\Debug\Lab2.exe
